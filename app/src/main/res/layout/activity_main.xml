@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jieli.finalproject1.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smart Home  "
+        android:gravity="center"
+        android:id="@+id/smart_home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/smart_home"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="22dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        tools:layout_centerVertical="false">
+
+        <Button
+            android:text="Living room "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            tools:layout_rowWeight="1"
+            tools:layout_gravity="fill"
+            android:id="@+id/living_room" />
+
+        <Button
+            android:id="@+id/kitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/smart_home"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:text="Kitchen"
+            tools:layout_gravity="fill"
+            tools:layout_rowWeight="1" />
+
+        <Button
+            android:text="House Setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/house"
+            android:layout_column="0"
+            android:layout_row="1"
+            tools:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            tools:layout_gravity="fill"/>
+
+        <Button
+            android:text="Automobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            tools:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            tools:layout_gravity="fill"
+            android:id="@+id/automobile" />
+
+
+
+    </GridLayout>
+
+</RelativeLayout>
