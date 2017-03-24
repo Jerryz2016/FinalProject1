@@ -32,20 +32,20 @@
         tools:layout_centerVertical="false">
 
         <Button
-            android:text="Living room "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/living_room"
+
             android:layout_column="0"
             android:layout_row="0"
-            tools:layout_rowWeight="1"
+            android:text="Living room "
+            android:textSize="18sp"
+            android:visibility="visible"
             tools:layout_gravity="fill"
-            android:id="@+id/living_room" />
+            tools:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/kitchen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/smart_home"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_row="0"
@@ -54,26 +54,26 @@
             tools:layout_rowWeight="1" />
 
         <Button
-            android:text="House Setting"
+            android:id="@+id/house"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/house"
             android:layout_column="0"
-            android:layout_row="1"
-            tools:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            tools:layout_gravity="fill"/>
+            android:layout_row="1"
+            android:text="House Setting"
+            tools:layout_gravity="fill"
+            tools:layout_rowWeight="1" />
 
         <Button
-            android:text="Automobile"
+            android:id="@+id/automobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
-            android:layout_row="1"
-            tools:layout_rowWeight="1"
             android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:text="Automobile"
             tools:layout_gravity="fill"
-            android:id="@+id/automobile" />
+            tools:layout_rowWeight="1" />
 
 
 
