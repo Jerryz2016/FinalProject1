@@ -16,7 +16,7 @@
         android:text="Smart Home  "
         android:gravity="center"
         android:id="@+id/smart_home"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+         />
 
     <GridLayout
         android:layout_width="match_parent"
